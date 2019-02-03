@@ -2,14 +2,14 @@ const {SHA256} =  require('crypto-js');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
-let password = '123abc';
+let password = 'abcdef';
 // bcrypt.genSalt(10, (err, salt)=>{
 //   bcrypt.hash(password, salt, (err, hash)=>{
 //     console.log(hash);
 //   });
 // });
 
-let hashedPassword = "$2a$10$3erw6KtrUVadspi0b/DoQO3ZCEjVqOzc1/./9W6o.HNm0NtZd99yO";
+let hashedPassword = "$2a$10$HgykDl99wrmSMwGe5yup3.21LPI0EOzT69qmTv9ZyN0oIAw/EG1DS";
 
 bcrypt.compare(password, hashedPassword, (err, res)=>{
   console.log(res);
