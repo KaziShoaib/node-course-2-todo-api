@@ -3,9 +3,9 @@ mongoose.Promise = global.Promise;
 //let localDB = 'mongodb://localhost:27017/TodoApp';
 
 //this is a sample url of db created in mongo atlas
-//to connect another collection the new collection name should be where 'node-todo-api' is
+//to connect another db the new db name should be where 'node-todo-api' is
 //the first 'hello' is name of user in the cluster
-//the second 'hello123' is the password for user
+//the second 'hello123' is the password for user in the cluster
 //after creating the app on heroku
 //the varibles MONGODB_URI and MONGOLAB_URI have to be set from the settings page of
 //the app in the config vars section
